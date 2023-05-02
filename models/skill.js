@@ -2,9 +2,9 @@
 // Model what a single ToDo should look like
 
 const skills = [
-    { id: 'javascript', description: 'Most widely used language for web development', hard: true },
-	{ id: 'python', description: 'Newer language with easy to ready syntax', hard: false },
-	{ id: 'css', description: 'Language used to style html elements', hard: false },
+    { id: 'JavaScript', description: 'Most widely used language for web development', hard: true },
+	{ id: 'Python', description: 'Newer language with easy to ready syntax', hard: false },
+	{ id: 'CSS', description: 'Language used to style html elements', hard: false },
 ]
 
 // const skills = [
