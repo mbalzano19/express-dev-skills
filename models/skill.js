@@ -31,14 +31,13 @@ function getOne(id) {
 function create(skill) {
     // I am trying to make the skill.id be what is entered into the add skill form, however
     // I am struggling to figure out how to do that in this function. How can I do that?
-    // skill.id = skills.id
+    skill.id = Date.now() % 1000000
     skill.hard = false
     skills.push(skill)
 }
 
 function deleteOne(id) {
     // id = parseInt(id)
-
     const idx = skills.findIndex(skill => skill.id === id)
     skills.splice(idx, 1)
 }

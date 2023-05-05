@@ -1,10 +1,9 @@
 const Skill = require('../models/skill')
 
-function index(req, res) {
-    res.render('skills/index', {
-        skills: Skill.getAll(),
-        title: "All Skills"
-    })
+
+
+function newSkill(req, res) {
+    res.render('skills/new', { title: 'New Skill' })
 }
 
 function show(req, res) {
@@ -14,9 +13,13 @@ function show(req, res) {
     })
 }
 
-function newSkill(req, res) {
-    res.render('skills/new', { title: 'New Skill' })
+function index(req, res) {
+    res.render('skills/index', {
+        skills: Skill.getAll(),
+        title: "All Skills"
+    })
 }
+
 
 function create(req, res) {
     Skill.create(req.body)
