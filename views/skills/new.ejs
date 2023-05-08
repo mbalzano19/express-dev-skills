@@ -1,6 +1,10 @@
 <%- include('../partials/header') %>
 
 <form action="/skills" method="POST" autocomplete="off">
+    <!-- This `name` attribute should match up to what data is going in this input
+    On the server side this comes in as { id: 'value that user typed in' }
+    But we are not in taking an `id` here we are in taking a skill so we should change this over to `skill`
+    That way server side this will come in as { skill: 'value that user typed in' } -->
     <input type="text" name="id">
     <button type="submit">Save Skill</button>
 </form>
